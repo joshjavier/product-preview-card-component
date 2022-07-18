@@ -23,11 +23,11 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Screenshot
+### Screenshots
 
-![](./screenshot-desktop.png)
+![](./images/screenshot-desktop.png)
 
-![](./screenshot-mobile.png)
+<img src="./images/screenshot-mobile.png" alt="" width="375px">
 
 ### Links
 
@@ -52,7 +52,7 @@ In terms of the code, I learned about the `<picture>` element and used it to sho
 
 ### Useful resources
 
-- [<picture>: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
+- [\<picture\>: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
 
 ## Author
 
