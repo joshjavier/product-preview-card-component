@@ -1,0 +1,189 @@
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
+
+.card {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875rem;  /* 14px */
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em;
+}
+
+.card .img {
+    height: 240px;
+}
+
+.card .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius:  12px;
+    border-top-right-radius: 12px;
+}
+
+.card .text {
+    padding: 1.75em 2em;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius:  12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card .title,
+.card .current-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.card .title {
+    color: hsl(212, 21%, 14%);
+    line-height: 1;
+}
+
+.card .category {
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    order: -1;
+    font-size: 0.8rem;
+}
+
+.card .description {
+    line-height: 1.65;
+}
+
+.card .price-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.card .current-price {
+    color: hsl(158, 36%, 37%);
+}
+
+.card .original-price {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.card .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 1.1em;
+    font-weight: 700;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.card .button:hover,
+.card .button:active {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.card .button svg {
+    fill: currentColor;
+}
+
+
+
+@media (min-width: 550px) {
+    body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: row-reverse;
+        max-width: 600px;
+    }
+
+    .card .img {
+        height: unset;
+        width: 50%;
+    }
+
+    .card .img img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+    }
+
+    .card .text {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+        width: 50%;
+        gap: 1.5em;
+        padding: 2.25em;
+    }
+
+    .card .price-container {
+        margin-top: auto;
+    }
+}
+
+
+
+/*------------------------------------*\
+  #UTILITY CLASSES
+\*------------------------------------*/
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
