@@ -12,6 +12,7 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 img {
@@ -21,6 +22,7 @@ img {
 
 body {
     background-color: hsl(30, 38%, 92%);
+    padding: 1em;
 }
 
 
@@ -44,7 +46,8 @@ body {
     font-size: 0.875rem;  /* 14px */
     display: flex;
     flex-direction: column-reverse;
-    margin: 1em;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .card .img {
@@ -123,6 +126,7 @@ body {
     font-weight: 700;
     font-size: 100%;
     cursor: pointer;
+    transition-duration: 100ms;
 }
 
 .card .button:hover,
